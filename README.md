@@ -30,3 +30,10 @@ Regex pattern used in this project:
  ┣ 📜 requirements.txt    # Required dependencies
  ┣ 📜 sample_data.csv     # Example dataset
  ┗ 📜 README.md           # Project documentation
+
+from pan_cleaning import validate_pan
+
+print(validate_pan("ABCDE1234F"))  # ✅ Valid
+print(validate_pan("abc123"))      # ❌ Invalid
+
+
